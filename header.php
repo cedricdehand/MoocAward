@@ -13,8 +13,11 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
+
     <?php wp_head(); ?>
     <?php wp_enqueue_script("jquery"); ?>
+
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/myscript.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +30,7 @@
 
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">

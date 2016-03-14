@@ -1,0 +1,173 @@
+/*
+Theme Name: Mooc Award Théme
+Description: Theme créer pour l'événment Mooc Award 
+Author: Cedric DEHAND
+Author URI: http://www.cedric-dehand.fr
+Version: 1.0
+Tag: responsive, theme, wordpress, événement
+*/
+@import url('assets/css/bootstrap.min.css');
+@import url('assets/css/modern-business.css');
+@import url('assets/font-awesome/css/font-awesome.min.css');
+
+@import "mixins";
+
+@import "mooc";
+@import "jury";
+@import "footer";
+
+@font-face {
+    font-family: 'Neon80'; 
+    src: url('assets/fonts/Neon.ttf'); 
+    font-weight: normal; 
+
+}
+@font-face {
+    font-family: 'Arcon'; 
+    src: url('assets/fonts/Arcon-Regular.otf'); 
+    font-weight: normal; 
+
+}
+
+
+body{
+    text-align: center;
+    color: white;
+    font-family: "Arcon";
+    padding-top: 0px;
+
+}
+h1,h2,h3,h4{
+    font-family: "Neon80";
+}
+.navbar{
+    position: fixed;
+    background-color:#F38610; 
+    font-family: "Neon80";
+    width: 100%;
+    z-index: 9;
+
+    .navbar-fixed-top{
+        top : 0px !important;
+    }
+}
+
+.navbar li a{
+    font-size: 20px;
+    
+}
+#logos{
+    margin-top: -6vh;
+    height: 100vh;
+    background-color: #F38610;
+    opacity:0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(http://amsterdamcurated.nl/wp-content/uploads/2014/08/startup-office.jpg)
+}
+#logos h1{
+    margin-top: 30vh
+}
+
+
+/*======================================
+                A propos            
+======================================*/
+
+#apropos{
+    background-color:#4e85ad;
+}
+.apropos-col{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.colapopos{
+    padding-right: 20px;
+
+    &:nth-child(1):before{
+        background-image: url(assets/img/SHARE.svg);
+    }
+    &:nth-child(2):before{
+        background-image: url(assets/img/MICROPHONE.svg);
+    }
+     &:nth-child(3):before{
+        background-image: url(assets/img/MAPPIN.svg);
+    }
+    &:before {
+        background-size: 35px;
+        width: 50px;
+        height:50px;
+        background-repeat: no-repeat;
+        margin: 10px auto 30px auto;
+        content : "";
+        display: block;
+    }
+    
+    p{
+        text-align: justify;
+        padding-right: 20px 
+    }
+}
+
+
+/*======================================
+            Twitter FAQ 
+======================================*/
+
+#twitteretfaq{
+    background-color:#4e85ad;
+}
+
+/*======================================
+            Map et Deroulement
+======================================*/
+
+#map{
+    color: black;
+}
+
+
+/*======================================
+        Buttons     
+======================================*/
+
+.buttonassistez{
+    margin:20px;
+}
+.faq{
+    background-color: white;
+    padding: 15px 32px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+
+    .boxShadow;
+    
+}
+.faq>a{
+    color: #4e85ad;
+    font-size: 16px;
+    font-family: "Neon80";
+}
+.assistez{
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    .boxShadow;
+
+    
+
+    border-color: #4e85ad
+}
+.assistez>a{
+    color: #4e85ad;
+    font-size: 16px;
+    font-family: "Neon80";
+}

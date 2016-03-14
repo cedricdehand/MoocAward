@@ -121,14 +121,15 @@
 
         if($query->have_posts()):while($query->have_posts()) : $query->the_post();?>
 
-         <div class="col-md-2 mooc" >
+         <div class="col-md-2 jury" >
 			<a hred="<?php the_permalink(); ?>">
-
+                <div class="Image_wrapper">
                     <?php the_post_thumbnail('thumbnail') ?>
-
+                </div>
+                <div class="Text_wrapper">
                     <h4><?php the_title(); ?></h4>
-
                     <?php the_excerpt();?>
+                </div>
 		  </a>
                 </div>
 
