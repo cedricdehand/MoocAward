@@ -1,0 +1,23 @@
+
+.boxShadow{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.transitions(@prop : all; @duration : .5s; @easing : ease) {
+  -webkit-transition          : @prop @duration @easing;
+  -moz-transition             : @prop @duration @easing;
+  -ms-transition              : @prop @duration @easing;
+  -o-transition               : @prop @duration @easing;
+  transition                  : @prop @duration @easing;
+}
+
+.click {
+  &:hover {
+    cursor                  : pointer;
+  }
+  &:focus {
+    cursor                  : pointer;
+  }
+  &:active {
+    cursor                  : pointer;
+  }
+}
