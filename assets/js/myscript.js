@@ -2,12 +2,13 @@
 function app () {
     onScroll();
     window.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
 }
 
 function onScroll () {
     var element = document.getElementById("logos");
     var navbar = document.querySelector(".navbar");
-    var opreation = (element.offsetHeight - element.clientTop ) - window.pageYOffset;
+    var opreation = (element.offsetHeight ) - 56 - window.pageYOffset;
 
     console.log(element.clientHeight , element.clientTop , window.pageYOffset)
     

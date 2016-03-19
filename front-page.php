@@ -130,8 +130,8 @@
                     <h4><?php the_title(); ?></h4>
                     <?php the_excerpt();?>
                 </div>
-		  </a>
-                </div>
+		      </a>
+        </div>
 
         <?php endwhile; else: ?>
 
@@ -187,14 +187,15 @@
 		
 		<div class="col-md-2 mooc" >
 			
-                	<a href="<?php the_permalink(); ?>" >
-                    		<?php the_post_thumbnail('thumbnail') ?>
+            <a href="<?php the_permalink(); ?>" >
+                <?php the_post_thumbnail('thumbnail') ?>
+                <div class="Text_wrapper">
+            		<h4><?php the_title(); ?></h4>
 
-                    		<h4><?php the_title(); ?></h4>
-
-                    		<?php the_content();?>
-			</a>
+            		<?php the_content();?>
                 </div>
+			</a>
+        </div>
 
 
             <?php endwhile; else: ?>
