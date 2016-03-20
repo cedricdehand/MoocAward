@@ -176,7 +176,7 @@
 
         $recherche=$category->name;
 
-        if ($recherche != 'mooc' && $recherche != 'jury' && $recherche !='president'){ ?>
+        if ($recherche != 'mooc' && $recherche != 'Jury' && $recherche != 'jury' && $recherche !='president'){ ?>
 
         <h3><i class="fa fa-chevron-right"></i> Award du mooc dans la catégorie : <?php echo $recherche; ?></h3>
         <div class=" row">
@@ -185,14 +185,15 @@
 
             <?php if($query->have_posts()):while($query->have_posts()) : $query->the_post(); ?>
 		
-		<div class="col-md-2 mooc" >
+		<div class="col-md-3 mooc" >
 			
             <a href="<?php the_permalink(); ?>" >
-                <?php the_post_thumbnail('thumbnail') ?>
+                <div class="Image_wrapper">
+                    <?php the_post_thumbnail('medium') ?>
+                </div>
                 <div class="Text_wrapper">
             		<h4><?php the_title(); ?></h4>
-
-            		<?php the_content();?>
+                    <?php the_content(); ?>
                 </div>
 			</a>
         </div>

@@ -60,15 +60,34 @@ h1,h2,h3,h4{
     margin-top: -6vh;
     height: 100vh;
     background-color: #F38610;
-    opacity:0.5;
+    //opacity:0.5;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-image: url("assets/img/ville.jpg");
     background-position: 50%;
+    &:after{
+        content : "";
+        background-color: #4e85ad;
+        position: absolute;
+        top : 0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        opacity : 0.5;
+    }
 }
 #logos h1{
-    margin-top: 30vh
+    margin-top: 30vh;
+    position:relative;
+    position: relative;
+    z-index: 1;
+
+}
+
+#logos img {
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -78,6 +97,12 @@ h1,h2,h3,h4{
 
 #apropos{
     background-color:#4e85ad;
+    padding-top: 50px;
+
+    h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 .apropos-col{
     margin-top: 50px;
@@ -85,7 +110,9 @@ h1,h2,h3,h4{
 }
 
 .colapopos{
-    padding-right: 20px;
+    h4{
+        margin: 25px;
+    }
 
     &:nth-child(1):before{
         background-image: url(assets/img/SHARE.svg);
@@ -108,7 +135,8 @@ h1,h2,h3,h4{
     
     p{
         text-align: justify;
-        padding-right: 20px 
+        font-family: sans-serif;
+        line-height: 24px;
     }
 }
 
@@ -136,6 +164,9 @@ h1,h2,h3,h4{
 
 .buttonassistez{
     margin:20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 .faq{
     background-color: white;
@@ -170,5 +201,6 @@ h1,h2,h3,h4{
 .assistez>a{
     color: #4e85ad;
     font-size: 16px;
-    font-family: "Neon80";
+    font-family: sans-serif;
+    
 }
