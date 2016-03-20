@@ -288,15 +288,19 @@
             <div class="co-md-6" id="FAQ">
 
                 <h1>F.A.Q</h1>
-
-                <button class="faq"><a>Comment nous contacter ?</a></button>
-                <p>Vous avez une question, une demande en particulier ? L’équipe des Mooc Awards est là pour vous répondre ! Ecrivez-nous à l’adresse suivante : xxx@moocawards.f</p>
-
-                <button class="faq"><a>Comment soutenir votre Mooc ?</a></button>
-                <p>Pour participer à cet évènement unique, il vous suffit de cliquer sur ce lien digitick.net/moocawards et de renseigner les champs demandés. Vous recevrez alors votre invitation par mail, à présenter le jour J.</p>
-
-                <button class="faq"><a>Comment rejoindre l'équipe ?</a></button>
-                <p>Même si la décision finale revient à notre jury d’exception, vous pouvez soutenir votre Mooc préféré à travers nos réseaux sociaux.</p>
+                
+                <div class="Question">
+                    <button class="faq"><a>Comment nous contacter ?</a></button>
+                    <p>Vous avez une question, une demande en particulier ? L’équipe des Mooc Awards est là pour vous répondre ! Ecrivez-nous à l’adresse suivante : xxx@moocawards.f</p>
+                </div>
+                <div class="Question">
+                    <button class="faq"><a>Comment soutenir votre Mooc ?</a></button>
+                    <p>Pour participer à cet évènement unique, il vous suffit de cliquer sur ce lien digitick.net/moocawards et de renseigner les champs demandés. Vous recevrez alors votre invitation par mail, à présenter le jour J.</p>
+                </div>
+                <div class="Question">
+                    <button class="faq"><a>Comment rejoindre l'équipe ?</a></button>
+                    <p>Même si la décision finale revient à notre jury d’exception, vous pouvez soutenir votre Mooc préféré à travers nos réseaux sociaux.</p>
+                </div>
                 <!--<button class="faq"><a>Quelles sont les récompenses ?</a></button>-->
                 <!--<p></p>-->
             </div>
@@ -356,3 +360,8 @@
 
 
 <?php get_footer(); ?>
+
+<div class="modal">
+    <div onclick="closeModal()" class="filter"></div>
+    <div class="modal--content"></div>
+</div>
