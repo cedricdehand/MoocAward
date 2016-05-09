@@ -1,8 +1,8 @@
 <!-- Footer -->
 <footer>
-    <div class="container">
+    <div class="container" id='footer'>
         <div class="row">
-           <div class="col-md-4">
+           <div class="col-md-2">
 			    <?php $query =new WP_Query(array('pagename'=> 'accueil'));
 			    if($query->have_posts()):while($query->have_posts()) : $query->the_post(); ?>
 			    <?php the_content();
@@ -19,7 +19,7 @@
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse col-md-4',
                 'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav navbar',
+                'menu_class'        => 'nav navbar-nav col-md-12 footermenu',
         	));
         	wp_nav_menu( array(
                 'menu'              => 'socialfooter',
@@ -28,7 +28,7 @@
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',
                 'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav navbar-right',
+                'menu_class'        => 'nav navbar-nav navbar-right footermenu',
         	));
         ?>
         </div>
