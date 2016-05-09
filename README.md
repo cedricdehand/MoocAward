@@ -19,4 +19,3 @@ Dans le panneau d'administration Aparence>theme
 - Button-assitez
 - Partenaires
 - A propos
-### LA base de donner de notre cite d'exemple join avec le git
